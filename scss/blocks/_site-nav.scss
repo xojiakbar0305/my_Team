@@ -1,0 +1,126 @@
+.site-header__nav {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+.logo {
+  display: inline-flex;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+.site-header__logo {
+   margin-right: 80px;
+}
+.toggler-button {
+  display: none;
+}
+.close-button {
+  display: none;
+}
+.site-header__wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.site-header__list {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.site-header__item:not(:last-child) {
+  margin-right: 40px;
+}
+.nav-item__link {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: $text-color;
+  padding: 0;
+  border-radius: 0;
+}
+.nav-item__link:hover {
+  color: $pink-color;
+}
+.site-header__link {
+  display: inline-flex;
+  margin-left: auto;
+}
+@include breakpoint-down (650px) {
+  .site-header__wrapper {
+    display: none;
+    z-index: 60;
+    right: 0;
+    top: 0;
+    width: 255px;
+    height: 100%;
+    background-color: $nav-color;
+    padding-top: 112px;
+    padding-left: 48px;
+    padding-right: 25px;
+  }
+  .site-header__wrapper::before {
+    position: absolute;
+    display: inline-block;
+    content: '';
+    left: 0;
+    right: 0;
+    top: 0;
+    transform: translateX(-100%);
+    bottom: 0;
+    background-color: #014E56;
+    opacity: 0.5;
+    display: inline-block;
+    width: 100vw;
+    height: 100%;
+    z-index: 100;
+  }
+  .site-header__list {
+    display: block;
+  }
+  .site-header__item:not(:last-child) {
+    margin-bottom: 24px;
+  }
+  .site-header__link {
+    background-color: $nav-color;
+    margin-top: 36px;
+  }
+  .toggler-button {
+    display: block;
+    position: absolute;
+    right: 0;
+    z-index: 90;
+    width: 29px;
+    height: 19px;
+    background-image: url("/img/open-toggler.svg");
+    background-color: $bg-header-color;
+    background-repeat: no-repeat;
+    border: none;
+    padding: 0;
+    outline: none;
+  }
+  .close-button {
+    display: block;
+    position: absolute;
+    right: 25px;
+    top: 56px;
+    z-index: 90;
+    width: 25px;
+    height: 25px;
+    background-image: url("/img/close-toggler.svg");
+    background-color: $nav-color;
+    background-repeat: no-repeat;
+    border: none;
+    padding: 0;
+    outline: none;
+  }
+}
+.open--toggle {
+  display: block;
+  position: fixed;
+}
+.close--menu {
+  display: none;
+}

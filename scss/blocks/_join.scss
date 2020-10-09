@@ -1,0 +1,25 @@
+.site-join {
+  padding-top: 76px;
+  padding-bottom: 76px;
+  background-color: $pink-color;
+  background-image: url("/img/join-bg.svg");
+  background-repeat: no-repeat;
+  background-position: left calc(50% - 572px) bottom 0px
+}
+.site-join__box {
+  max-width: 917px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+}
+.site-join__name {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  color: #012f34;
+  margin: 0;
+  margin-right: auto;
+}

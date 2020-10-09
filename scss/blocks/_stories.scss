@@ -1,0 +1,77 @@
+.site-stories {
+  background-color: $bg-header-color;
+  padding-top: 140px;
+  padding-bottom: 151px;
+  background-position: left calc(50% - 610px) top 0px, right calc(50% - 572px) bottom 0px;
+  background-image: 
+    url('/img/stores-bg.svg'),
+    url("/img/stores.svg");
+    background-repeat: no-repeat;
+}
+.site-stories__name {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  color: $text-color;
+  margin-top: 0;
+  margin-bottom: 56px;
+}
+.stories-title__span {
+  color: $skyblue-color;
+}
+.site-stories__avatars {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 92px;
+}
+.site-stories__avatar {
+  max-width: 350px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.site-stories__motto {
+  margin: 0;
+}
+.site-stories__motto::before {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: -37px;
+  left: 40%;
+  content: "";
+  width: 67px;
+  height: 56px;
+  background-image: url("/img/comma.png");
+  background-repeat: no-repeat;
+  
+}
+.motto-body__text {
+  margin-top: 0;
+  margin-bottom: 24px;
+  color: $text-color;
+}
+.site-stories__heading {
+  margin-top: 0;
+  margin-bottom: 2px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  color: $skyblue-color;
+}
+.site-stories__profession {
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  color: $text-color;
+}
+.site-stories__avatarimg {
+  width: 62px;
+  height: 62px;
+  border: 2px solid #C4FFFE;
+  border-radius: 50%;
+}

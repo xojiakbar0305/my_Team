@@ -1,0 +1,46 @@
+.button__light {
+  max-width: 153px;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  background-color: $bg-header-color;
+}
+.button__light:hover {
+  background-color: #ffffff;
+  color: #002529;
+}
+.button__light:disabled {
+  background-color: #014e56;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  opacity: 0.4;
+  cursor: no-drop;
+}
+.site-join__button {
+  max-width: 153px;
+  border: 2px solid #012F34;
+  background-color: $pink-color;
+  color: $bg-section-color;
+}
+.site-join__button:hover {
+  background-color: $bg-section-color;
+  color: #ffffff;
+}
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  outline: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  padding: 9px 32px;
+  border-radius: 24px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  transition: 
+    background-color 0.3s ease, 
+    color 0.3s ease;
+}
