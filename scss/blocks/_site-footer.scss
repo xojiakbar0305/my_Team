@@ -90,3 +90,40 @@
 .social-icon:hover  .site-footer__social-img path {
   fill: $pink-color;
 }
+@include breakpoint-down (794px) {
+  .site-footer__container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .site-join__name {
+    max-width: 327px;
+    text-align: center;
+    margin-bottom: 24px;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .site-join__box {
+    flex-direction: column;
+  }
+  .site-footer__boxs-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .site-footer__addressbox {
+    margin-left: 0;
+    text-align: center;
+    margin-top: 24px;
+  }
+  .site-footer__box-icon {
+    margin-left: 0;
+  }
+  .site-footer__box-icon {
+    align-items: center;
+    margin-top: 40px;
+  }
+  .site-footer__copyright {
+    margin-top: 16px;
+  }
+}

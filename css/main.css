@@ -1023,6 +1023,37 @@ img {
   border-radius: 50%;
 }
 
+@media only screen and (max-width: 997px) {
+  .site-stories__name {
+    max-width: 573px;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 32px;
+    margin: 0 auto;
+  }
+  .site-stories__avatars {
+    display: block;
+  }
+  .site-stories__avatar {
+    max-width: 573px;
+    margin: 0 auto;
+  }
+  .site-stories__motto::before {
+    -webkit-transform: translateX(38%);
+            transform: translateX(38%);
+  }
+  .site-stories__avatar:not(:last-child) {
+    margin-bottom: 84px;
+  }
+}
+
+@media only screen and (max-width: 794px) {
+  .site-stories__motto::before {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
 .site-join {
   padding-top: 76px;
   padding-bottom: 76px;
@@ -1192,5 +1223,60 @@ img {
 
 .social-icon:hover .site-footer__social-img path {
   fill: #f67e7e;
+}
+
+@media only screen and (max-width: 794px) {
+  .site-footer__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .site-join__name {
+    max-width: 327px;
+    text-align: center;
+    margin-bottom: 24px;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .site-join__box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .site-footer__boxs-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .site-footer__addressbox {
+    margin-left: 0;
+    text-align: center;
+    margin-top: 24px;
+  }
+  .site-footer__box-icon {
+    margin-left: 0;
+  }
+  .site-footer__box-icon {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 40px;
+  }
+  .site-footer__copyright {
+    margin-top: 16px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

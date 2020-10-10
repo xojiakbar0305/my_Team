@@ -75,3 +75,30 @@
   border: 2px solid #C4FFFE;
   border-radius: 50%;
 }
+@include breakpoint-down (997px) {
+  .site-stories__name {
+    max-width: 573px;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 32px;
+    margin: 0 auto;
+  }
+  .site-stories__avatars {
+    display: block;
+  }
+  .site-stories__avatar {
+    max-width: 573px;
+    margin: 0 auto;
+  }
+  .site-stories__motto::before {
+    transform: translateX(38%);
+  }
+  .site-stories__avatar:not(:last-child) {
+    margin-bottom: 84px;
+  }
+}
+@include breakpoint-down (794px) {
+  .site-stories__motto::before {
+    transform: translateX(0);
+  }
+}
