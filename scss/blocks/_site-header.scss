@@ -3,6 +3,9 @@
   padding-bottom: 77px;
   background-color: $bg-header-color;
 }
+.site-header__img {
+  height: 100%;
+}
 @include breakpoint-down (768px) {
   .site-header {
     padding-top: 64px;

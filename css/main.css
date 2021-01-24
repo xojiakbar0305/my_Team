@@ -497,6 +497,10 @@ img {
   background-color: #014E56;
 }
 
+.site-header__img {
+  height: 100%;
+}
+
 @media only screen and (max-width: 768px) {
   .site-header {
     padding-top: 64px;
