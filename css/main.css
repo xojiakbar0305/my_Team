@@ -499,6 +499,8 @@ img {
 
 .site-header__img {
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media only screen and (max-width: 768px) {
