@@ -75,7 +75,35 @@
   border: 2px solid #C4FFFE;
   border-radius: 50%;
 }
-@include breakpoint-down (997px) {
+@include breakpoint-down (1050px) {
+  .site-stories {
+    background-position: left calc(50% - 442px) top 0px, right calc(50% - 415px) bottom 0px;
+  }
+  .site-stories__name {
+    max-width: 573px;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 32px;
+    margin: 0 auto;
+  }
+  .site-stories__avatars {
+    display: block;
+  }
+  .site-stories__avatar {
+    max-width: 573px;
+    margin: 0 auto;
+  }
+  .site-stories__motto::before {
+    transform: translateX(38%);
+  }
+  .site-stories__avatar:not(:last-child) {
+    margin-bottom: 84px;
+  }
+}
+@include breakpoint-down (980px) {
+  .site-stories {
+    background-position: left calc(50% - 413px) top 0px, right calc(50% - 382px) bottom 0px;
+  }
   .site-stories__name {
     max-width: 573px;
     font-weight: bold;

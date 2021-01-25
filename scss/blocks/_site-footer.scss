@@ -6,6 +6,7 @@
 .site-footer__container {
   display: flex;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 .site-footer__logo {
   display: inline-flex;
@@ -90,21 +91,22 @@
 .social-icon:hover  .site-footer__social-img path {
   fill: $pink-color;
 }
+@include breakpoint-down (980px) {
+  .site-footer__box-icon {
+    flex-direction: row;
+    width: 100%;
+  }
+  .site-footer__addressbox {
+    margin-left: auto;
+  }
+  .site-footer__social-icons {
+    margin-right: auto;
+  }
+}
 @include breakpoint-down (794px) {
   .site-footer__container {
     flex-direction: column;
     align-items: center;
-  }
-  .site-join__name {
-    max-width: 327px;
-    text-align: center;
-    margin-bottom: 24px;
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 32px;
-  }
-  .site-join__box {
-    flex-direction: column;
   }
   .site-footer__boxs-link {
     display: flex;

@@ -4,7 +4,7 @@
   background-color: $pink-color;
   background-image: url("/img/join-bg.svg");
   background-repeat: no-repeat;
-  background-position: left calc(50% - 572px) bottom 0px
+  background-position: left calc(50% - 572px) bottom 0px;
 }
 .site-join__box {
   max-width: 917px;
@@ -22,4 +22,22 @@
   color: #012f34;
   margin: 0;
   margin-right: auto;
+}
+@include breakpoint-down (1050px) {
+  .site-join {
+    background-position: left calc(50% - 440px) bottom -25px;
+  } 
+}
+@include breakpoint-down (980px) {
+  .site-join__name {
+    font-size: 32px;
+  }
+}
+@include breakpoint-down (794px) {
+  .site-join {
+    background-position: left calc(50% - 340px) bottom -25px;
+  }
+  .site-join__name {
+    font-size: 32px;
+  }
 }

@@ -81,9 +81,25 @@
   opacity: 0.8;
   color: $text-color;
 }
-@include breakpoint-down (997px) {
+@include breakpoint-down (1050px) {
   .section-team {
-    background-position: right calc(50% - 500px) top;
+    background-position: right calc(50% - 516px) top;
+  }
+  .section-team__container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-team__name {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 64px;
+    margin-right: 172px;
+  }
+}
+@include breakpoint-down (980px) {
+  .section-team {
+    background-position: right calc(50% - 480px) top;
   }
   .section-team__container {
     flex-direction: column;

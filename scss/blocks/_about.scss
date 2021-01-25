@@ -1,0 +1,9 @@
+.section-about__name {
+  font-size: 64px;
+}
+.section-about__textbox {
+  width: 730px;
+}
+.section-about__textbox::before {
+  background-color: $pink-color;
+}
